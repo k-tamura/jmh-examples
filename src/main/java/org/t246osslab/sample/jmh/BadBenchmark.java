@@ -22,7 +22,7 @@ public class BadBenchmark {
     public static void main(String[] args) {
 
         int MAX_LOOP_COUNT = 1000;
-        System.out.println("1000回実行した処理時間の比較（単位：ミリ秒）");
+        System.out.println(MAX_LOOP_COUNT + "回実行した処理時間の比較（単位：ミリ秒）");
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < MAX_LOOP_COUNT; i++) {
             if (logger.isLoggable(Level.INFO))

@@ -24,12 +24,12 @@ public class MyBenchmark {
     @Benchmark
     public void testMethod() {
         if (logger.isLoggable(Level.INFO)) {
-            logger.info("Logger is " + Level.INFO + " level.");
+            logger.info("Logger is " + logger.getLevel() + " level.");
         }
     }
 
     @Benchmark
     public void testMethod2() {
-        logger.info("Logger is " + Level.INFO + " level.");
+        logger.info("Logger is " + logger.getLevel() + " level.");
     }
 }
